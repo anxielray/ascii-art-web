@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-art</title>
+    <style>
+        body {
+            color: black;
+            background-color: goldenrod  ;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;            
+        }
+        .content {
+            text-align: center;
+            margin-top: 20px; 
+        }
+        fieldset{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Aloha, Developer, this is Ascii-art! Wanna see magic!</h1>
+    </div>
+
+    
+
+    <fieldset>
+
+          <legend>Select a banner file</legend>
+        <input id="standard" type="radio" name="bannerfile" value="standard" checked> <label for="standard">standard</label>
+          <input id="shadow" type="radio" name="bannerfile" value="shadow"> <label for="shadow">shadow</label>
+          <input id="thinkertoy" type="radio" name="bannerfile" value="thinkertoy"> <label for="thinkertoy">thinkertoy</label>
+        </fieldset>
+        
+    <form action="/submit" method="post">
+        <label for="name">Text</label>
+        <input type="text" name="text" placeholder="Input text here" required>
+        <button type="submit">Submit</button>
+    </form>
+    </section>
+</body>
+</html>
